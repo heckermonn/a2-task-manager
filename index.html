@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Louis Tran, Alex Ala-Kantti, Ayman Nasir">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<!--    
+Created the main landing page layout
+Added buttons with id attributes (addTaskBtn, taskListBtn, etc.) for JavaScript to target
+Linked the Notifications dropdown
+Included a Get Started button linking to about.html
+-->
+
+<body onload="typeWriter()">
+    <header>
+        <!-- Notification Bell Icon -->
+        <div class="notification-container" onclick="toggleNotifications()">
+            <div class="notification-bell">
+                <img src="/images/notificon.png" alt="Notifications" />
+                <div id="notificationBadge" class="notification-badge">3</div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div id="nav-icon" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.php">Task List</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Notifications Dropdown -->
+        <div id="notificationsDropdown">
+            <div class="notification-item">
+                <strong>New Task Reminder</strong>
+                <p>Complete project report by Friday</p>
+            </div>
+            <div class="notification-item">
+                <strong>Team Meeting</strong>
+                <p>Scheduled for next Monday at 10 AM</p>
+            </div>
+            <div class="notification-item">
+                <strong>Deadline Approaching</strong>
+                <p>Marketing campaign due in 3 days</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Welcome Message -->
+        <h1 id="title"></h1>
+        <p>Want to manage fast and easy? Use our website that stores your tasks to avoid procrastination!</p>
+
+        <!-- Action Buttons -->
+        <div class="button-section">                    
+            <a href="tasks.php"><button id="taskListBtn">Task List</button></a>
+        </div>
+
+        <!-- Get Started Button (Redirects to About Page) -->
+        <div class="getStarted">
+            <h2>Not sure what to do? Click below!</h2>
+            <a href="about.html"><button id="getStartedBtn">Get Started</button></a>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Task Manager. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

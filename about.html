@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Louis Tran, Alex Ala-Kantti Ayman Nasir">
+    <meta charset="UTF-8">
+    <title>Task Manager - About</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Notification Bell Icon -->
+        <div class="notification-container" onclick="toggleNotifications()">
+            <div class="notification-bell">
+                <img src="/images/notificon.png" alt="Notifications" />
+                <div id="notificationBadge" class="notification-badge">3</div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div id="nav-icon" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.php">Task List</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Notifications Dropdown -->
+        <div id="notificationsDropdown">
+            <div class="notification-item">
+                <strong>New Task Reminder</strong>
+                <p>Complete project report by Friday</p>
+            </div>
+            <div class="notification-item">
+                <strong>Team Meeting</strong>
+                <p>Scheduled for next Monday at 10 AM</p>
+            </div>
+            <div class="notification-item">
+                <strong>Deadline Approaching</strong>
+                <p>Marketing campaign due in 3 days</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1> About Task Manager</h1>
+        <section>
+            <h2>What is it?</h2>
+            <p>This website is a application designed to assist users to organize, manage and track their tasks.
+                Users are able to create, set, assign priorities and Status.
+            </p>
+        </section>
+
+        <section>
+            <h2> Key Features?</h2>
+            <ul>
+                <li>User Identification</li>
+                <li>Task Sorting</li>
+                <li>Add, Edit & Delete Tasks</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> Designed with:</h2>
+            <ul>
+                <li>Frontend: HTML5, CSS, JavaScript</li>
+                <li>Backend: PHP</li>
+                <li>Database: MySQL</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> How To Use?</h2>
+            <p>Click Add Task to create a New Task.</p>
+            <p>Use the Filter options to organize tasks by priority, status or due dates.</p>
+            <p>Click Edit to modify the Tasks.</p>
+            <p>Click Mark Done when a task is Done.</p>
+            <p>Login/Register to create an account with saved Tasks.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Task Manager. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

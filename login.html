@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Louis Tran, Alex Ala-Kantti Ayman Nasir">
+    <meta charset="UTF-8">
+    <title>Login - Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- CSS for styling -->
+    <script src="js/login.js"></script>
+</head>
+
+
+
+
+<!--
+PHP : process login credentials in login.php
+JavaScript : validate login form before submission
+CSS : style the login form-->
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.php">Task List</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Login</h1>
+
+        <!-- Login Form -->
+        <!--PHP to Login and store user -->
+
+        <!-- Login Form -->
+        <form id="loginForm" action="validate_login.php" method="POST">
+
+            <fieldset>
+                <legend>Enter Your Login.</legend>
+
+                <!-- User ID Input -->
+                <label for="userid">User ID:</label>
+                <input type="text" name="userid" id="userid" required>
+
+                <!-- Password Input -->
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+
+                <!-- Login & Register Buttons (Side by Side) -->
+                <div class="button-container">
+                    <button type="submit" name="login">Login</button>
+                    
+                </div>
+                <h4>Don't have an Account?</h4>
+                <a href="registration.php" class="register-btn">Register Here</a>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Task Manager. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
