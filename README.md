@@ -27,7 +27,7 @@ Features include:
 
 ```bash
 # 1  Clone
-git clone https://github.com/heckermonn/task-manager.git
+git clone https://github.com/heckermonn/a2-task-manager.git
 cd task-manager
 
 # 2  Spin up a local LAMP stack
@@ -45,8 +45,9 @@ cp credentials.sample.php credentials.php
 
 # 6  Browse!
 open http://localhost:8080   # or whatever port Apache maps to
+```
 
-Environment variables
+<h2>Environment variables</h2>
 Name	Purpose
 DB_HOST	MySQL host (default localhost)
 DB_USER	Database user
@@ -55,8 +56,9 @@ DB_NAME	Schema name (taskmanager)
 
 If any of these are missing, database.php falls back to the values inside credentials.php.
 
-Folder structure
+<h2>Folder structure</h2>
 
+```
 ├── db/
 │   └── createdb.sql
 ├── images/
@@ -78,21 +80,22 @@ Folder structure
 │   ├── update_status.php
 │   └── delete.php
 └── index.html
+```
 
-Security notes
+<h2>Security notes</h2>
 Prepared statements everywhere.
 Never concat SQL – see database.php helpers.
 
-Password hashing.
+<h3>Password hashing.</h3>
 We use password_hash($pass, PASSWORD_BCRYPT) and verify on login.
 
-CSRF protection.
+<h3>CSRF protection.</h3>
 Each mutating form includes a hidden token stored in $_SESSION['csrf'].
 
-Session hardening.
+<h3>Session hardening.</h3>
 Session ID regenerates on login; script exits if $_SESSION['user_id'] is missing.
 
-Authors
+<h2>Authors</h2>
 
 Louis Tran – Lead developer
 
