@@ -99,6 +99,6 @@ Session ID regenerates on login; script exits if $_SESSION['user_id'] is missing
 
 Louis Tran – Lead developer
 
-Alex Ala-Kantti – Front-end
+Alex Ala-Kantti – Back-end
 
-Ayman Nasir – Back-end
+Ayman Nasir – Front-end
